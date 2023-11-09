@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjust the last value for darkness (0.5 is semi-transparent) */
+}
+
+.header {
+  position: relative; 
+  background-image: url("https://coreminds.in/admin/uploads/image/home/slider.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+p,
+h1,
+i,
+button,
+h3,
+h2,
+h4,
+img,
+.play-div {
+  position: relative; /* Set the position to relative */
+  z-index: 1; /* Set a higher z-index to make sure the text appears on top */
+}
+
+.custom-font-size {
+  font-size: 4rem;
+}
+
+.video::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #126498; /* Hex color code for the filter */
+  opacity: 0.9; /* Adjust opacity as needed */
+}
+
+.custom-logo {
+  width: 260px;
+}
+.video {
+  position: relative;
+  background-image: url("https://coreminds.in/admin/uploads/image/home/17.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.play {
+  color: #126498;
+}
+.custom-play {
+  font-size: 5rem;
+}
+
+.width-set {
+  max-width: 600px;
+}
+
+.video.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.service {
+  background-image: url("https://coreminds.in/admin/uploads/image/home/04.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.side-head {
+  font-size: 2rem;
+}
+.para {
+  font-size: 1.1em;
+}
+.numbers-sec {
+  background-color: #005b96;
+}
+.text-counts {
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 200px;
+}
+
+.correct-num {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.custom-border {
+  border: 1px solid #c4c2c2; /* Light gray border color */
+}
+
+.custom-team-width {
+  max-width: 200px;
+}
+.coreminds {
+  background-color: #005b96;
+}
+.IT-partner {
+  background-color: #005b96;
+}
+
+/* media query for responsiveness */
+/* medium sized */
+@media (min-width: 576px) and (max-width: 991px) {
+  .first-part {
+    background-color: #323232;
+  }
+  .second-part {
+    position: relative; /* Ensure the ::before pseudo-element is positioned correctly */
+    background-image: url("https://coreminds.in/admin/uploads/image/home/slider.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .second-part::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .navbar-toggler {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff !important;
+  }
+}
+/* small sized */
+@media (max-width: 575.98px) {
+  .first-part {
+    background-color: #323232;
+  }
+  .second-part {
+    position: relative; /* Ensure the ::before pseudo-element is positioned correctly */
+    background-image: url("https://coreminds.in/admin/uploads/image/home/slider.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .second-part::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .navbar-toggler {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff !important;
+  }
+  .sml {
+    font-size: 0.9rem;
+  }
+  .custom-logo {
+    width: 100px;
+  }
+}
